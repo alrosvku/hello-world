@@ -1,10 +1,7 @@
+#!/bin/sh
+
 # Variables
 expectedresult="Hello, world!"
-
-# Set Directory
-
-# Build
-cargo build
 
 #Run
 actualresult=$(target/debug/hello-world)

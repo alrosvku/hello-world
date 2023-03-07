@@ -1,10 +1,10 @@
-build:
-	cargo build
+build: clean
+	scripts/build.sh
 
-run: 
-	cargo run
+run: build
+	target/debug/hello-world
 
-test:
+test: build
 	scripts/test.sh
 
 clean:
